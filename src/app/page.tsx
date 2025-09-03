@@ -5,7 +5,7 @@ import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen w-full overflow-x-hidden">
     <HomePage />
     <About />
     <Projects />
