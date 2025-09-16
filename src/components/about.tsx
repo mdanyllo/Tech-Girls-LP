@@ -44,7 +44,7 @@ export default function About() {
         ))}
       </div>
 
-      <div className="w-70 mt-6">
+      <div className="w-70 md:w-1/2 mt-6">
         <p className="text-center">
           Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
           reprehenderit sit ratione quia est consequatur illo...Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
