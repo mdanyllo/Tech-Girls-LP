@@ -2,6 +2,8 @@
 import HomePage from "@/components/home";
 import About from "@/components/about";
 import Projects from "@/components/projects";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
     <HomePage />
     <About />
     <Projects />
+    <Contact />
+    <Footer />
     </div>
   )
 }

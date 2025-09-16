@@ -1,12 +1,56 @@
+"use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
+const images = [
+  "/tg1.jpg",
+  "/allure.jpeg",
+  "/helena.jpeg",
+  "/yoko.jpeg",
+];
+
 export default function About() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) =>
+        prev === images.length - 1 ? 0 : prev + 1
+      );
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-      <div className="flex flex-col justify-center items-center w-full mt-10">
-        <h1 className="text-4xl">Conheça-nos</h1>
-        <div className="w-1/2">
-        <p className="text-center mt-4">Lorem ipsum dolor sit amet. Et quidem dolorem non nulla reprehenderit sit ratione quia est consequatur illo qui illo similique ut sint inventore aut eaque harum. Quo fuga iure ut placeat dolorum sed veniam omnis aut eveniet minus. Eos exercitationem repellendus ut dolorem possimus aut sunt commodi eos minima ipsum et quia porro! Sit ducimus voluptas eos natus quod non harum expedita et officiis molestias est ipsam rerum ut nihil iste cum asperiores magni. <br/>Aut voluptate earum sed nisi dolorum qui accusamus praesentium est quia laboriosam a dolores illum. Qui fugiat quidem eos illum possimus ut officia dicta vel quia ipsum! Sit repudiandae sint et ullam quia non quidem quis ex nulla aliquam.<br/>Sed enim cupiditate quo itaque excepturi non fugit rerum vel earum explicabo. Vel obcaecati laboriosam qui dolorem quisquam et aspernatur aperiam vel aliquid animi id recusandae consequuntur. Quo repellat provident ut consequatur enim est iste consequatur est voluptatem quia? Sit iste accusantium et deleniti optio ex atque voluptate? </p>
-        </div>
+    <div className="flex flex-col justify-center items-center w-full mt-10">
+      <h1 className="text-4xl mb-6">Conheça-nos</h1>
+
+      {/* Carrossel */}
+      <div className="relative w-90 md:w-full max-w-2xl md:h-72 h-52 overflow-hidden rounded-2xl shadow-lg">
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className={`absolute w-full h-full transition-opacity duration-1000 ${
+              index === currentIndex ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={src}
+              alt={`Slide ${index}`}
+              fill
+              className="object-cover"
+            />
+          </div>
+        ))}
       </div>
+
+      <div className="w-70 mt-6">
+        <p className="text-center">
+          Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
+          reprehenderit sit ratione quia est consequatur illo...Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
+          reprehenderit sit ratione quia est consequatur illo...
+        </p>
+      </div>
+    </div>
   );
 }
