@@ -8,9 +8,9 @@ export default function HomePage() {
         <div className="flex flex-col justify-center items-center w-full gap-2 mt-10">
           <Image alt="Logo" src="/tech.png" width={300} height={300}></Image>
           <div className="flex gap-14">
-            <Link className="cursor-pointer text-white hover:text-[#e8e7e7]" href="#about">Sobre</Link>
+            <Link className="cursor-pointer text-white hover:text-[#e8e7e7]" href="#about" scroll={true}>Sobre</Link>
             <Link className="cursor-pointer text-white hover:text-[#e8e7e7]" href="#projects">Projetos</Link>
-            <Link className="cursor-pointer text-white hover:text-[#e8e7e7]" href="#contact">Contato</Link>
+            <Link className="cursor-pointer text-white hover:text-[#e8e7e7]" href="#contact" scroll={true}>Contato</Link>
           </div>
         </div>
       </div>

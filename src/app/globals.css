@@ -115,9 +115,14 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+      @apply scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-onest);
+      @apply scroll-smooth;
+  }
+  html {
+      @apply scroll-smooth;
   }
 }

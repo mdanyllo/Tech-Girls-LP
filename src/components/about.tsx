@@ -22,7 +22,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full mt-10">
+    <div id="about" className="flex flex-col justify-center items-center w-full mt-10">
       <h1 className="text-4xl mb-6">Conheça-nos</h1>
 
       {/* Carrossel */}
@@ -44,7 +44,7 @@ export default function About() {
         ))}
       </div>
 
-      <div className="w-70 md:w-1/2 mt-6">
+      <div className="w-80 md:w-1/2 mt-6">
         <p className="text-center">
           Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
           reprehenderit sit ratione quia est consequatur illo...Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
