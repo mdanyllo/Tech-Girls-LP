@@ -44,12 +44,19 @@ export default function About() {
         ))}
       </div>
 
-      <div className="w-80 md:w-1/2 mt-6">
-        <p className="text-center">
-          Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
-          reprehenderit sit ratione quia est consequatur illo...Lorem ipsum dolor sit amet. Et quidem dolorem non nulla
-          reprehenderit sit ratione quia est consequatur illo...
+      <div className="w-82 md:w-1/2 flex flex-col gap-6 mt-10 md:mt-16">
+        <p className="text-center md:text-xl">
+          A Tech Girls é uma iniciativa criada em 2024 por estudantes do IEMA situado em São José de Ribamar, composta integralmente por mulheres. 
         </p>
+        <p className="text-center md:text-xl">
+        Atualmente, a equipe é formada pelas alunas Ana Luiza Leal Ramos, Daniela Júlia Leal, Ester Garcês e Kayla Rebeca Lopes, contando também com vagas abertas para novas integrantes que atuam de forma alternada nos eventos.
+        </p>
+        <p className="text-center md:text-xl">
+        Nosso grupo participa de campeonatos de tecnologia, game jams e eventos acadêmicos, com o objetivo de estimular a inovação e o protagonismo feminino na área tecnológica.
+        </p>
+        <p className="text-center md:text-xl">
+        Desenvolvemos projetos sob a orientação dos professores tutores Renata Maria Sousa Castro e Julio César Fernandes, produzindo jogos sustentáveis com narrativas originais que valorizam a cultura maranhense, exploram elementos de magia e ação, além de exaltar a riqueza dos povos indígenas.
+      </p>
       </div>
     </div>
   );
