@@ -13,6 +13,9 @@ export default function Contact () {
                 <Image alt="Email" width={80} height={100} src="/instagram.png"></Image>
             </Link>
             </div>
+            <h1 className="md:text-3xl text-2xl text-center mt-10" >Acesse nosso Instagram</h1>
+            <p className="md:text-xl text-base text-center mb-6">Aponte a camêra do seu celular</p>
+            <Image className=""  alt="QR Code Instagram" width={400} height={150} src="/qrcode.png"></Image>
         </div>
     )
 }
