@@ -4,9 +4,8 @@ import Image from "next/image";
 
 const images = [
   "/tg1.jpg",
-  "/allure.jpeg",
-  "/helena.jpeg",
-  "/yoko.jpeg",
+  "/img1.jpg",
+  "/img2.jpg",
 ];
 
 export default function About() {
@@ -23,9 +22,8 @@ export default function About() {
 
   return (
     <div id="about" className="flex flex-col justify-center items-center w-full mt-10">
-      <h1 className="text-4xl mb-6">Conheça-nos</h1>
+      <h1 className="text-4xl mb-12">Conheça-nos</h1>
 
-      {/* Carrossel */}
       <div className="relative w-90 md:w-full max-w-2xl md:h-72 h-52 overflow-hidden rounded-2xl shadow-lg">
         {images.map((src, index) => (
           <div
